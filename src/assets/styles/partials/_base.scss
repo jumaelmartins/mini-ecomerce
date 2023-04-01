@@ -1,0 +1,41 @@
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 0;
+  vertical-align: baseline;
+  font: inherit;
+  text-decoration: none;
+}
+
+a,
+a:visited,
+a:link,
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+nav,
+section,
+figure {
+  display: block;
+}
+
+svg {
+  width: 32px;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+html {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 63.5%;
+}
