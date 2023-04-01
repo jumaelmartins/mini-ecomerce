@@ -1,4 +1,6 @@
-export let products = [];
+import { getLocalStorageItem } from "./localStorage";
+
+export let products = getLocalStorageItem;
 let filteredItems = [];
 let cart = [];
 
