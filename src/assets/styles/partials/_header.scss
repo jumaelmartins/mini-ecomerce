@@ -1,0 +1,73 @@
+@use "./variables";
+
+.header {
+  @include variables.flex(column, nowrap, "", "");
+  background: variables.$primary;
+  padding: 2rem 5%;
+
+  .header__content {
+    @include variables.flex(column, nowrap, "", "");
+    .header__content__first-column {
+      @include variables.flex(row, nowrap, center, "");
+      .header__content__title {
+        font-size: 2rem;
+      }
+      .search-form {
+        @include variables.flex(row, nowrap, center, space-between);
+        @include variables.size(65%, auto, 65%, auto, auto, 0);
+        .search-form__input {
+          @include variables.size(100%, 3.5rem, 100%, auto, auto, 0.5rem);
+          border-radius: 0.5rem;
+          padding: 0 1rem;
+        }
+        .search-form__button {
+          background: none;
+          svg {
+            height: 2.4rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+.auth {
+  @include variables.flex(row, nowrap, center, "");
+  margin: 1rem 0;
+
+  .auth__icon {
+    @include variables.size(4.8rem, 4.8rem, auto, auto, "", "");
+    @include variables.flex(row, nowrap, center, center);
+    background: lightgray;
+    border-radius: 100%;
+    border: 0.2rem solid snow;
+  }
+
+  a {
+    margin: 0 1rem;
+  }
+}
+
+.icons__cart {
+  @include variables.position(absolute, 2.4rem, 5rem, "", "");
+  @include variables.size(2.4rem, 2.4rem, "", "", "", "");
+}
+
+.menu {
+  @include variables.position(absolute, 2.6rem, 1.6rem, "", "");
+  @include variables.size(2.4rem, 2.4rem, "", "", "", "");
+}
+
+.icons__heart {
+  @include variables.position(absolute, 7.5rem, 1.6rem, "", "");
+  @include variables.size(2.4rem, 2.4rem, "", "", "", "");
+}
+
+.icons__chat {
+  @include variables.position(absolute, 7.5rem, 5rem, "", "");
+  @include variables.size(2.4rem, 2.4rem, "", "", "", "");
+}
+
+.header__nav {
+  line-height: 8rem;
+}

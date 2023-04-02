@@ -9,7 +9,7 @@
   <body>
     <header class="header">
       <div class="header__content">
-        <div class="header__content__first-collumn">
+        <div class="header__content__first-column">
           <h1 class="header__content__title">JM</h1>
           <form class="search-form" action="">
             <input class="search-form__input" placeholder="Busque aqui" type="search">
@@ -22,8 +22,8 @@
           </form>
         </div>
 
-        <div class="header__content__second-collumn">
-          <div class="auth">
+        <div class="header__content__second-column">
+          <div class="auth hidden">
             <figure class="auth__icon">
               <svg width="64" height="64" class="trash" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
@@ -33,17 +33,17 @@
             <a class="auth__item" href="">Login</a>
             <a class="auth__item" href="">Registre-se</a>
           </div>
-          <div class="">
+          <div class="icons">
             <figure>
-              <svg width="64" height="64" class="trash" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <svg class="icons__chat hidden" width="64" height="64" class="trash" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
               </svg>
 
-              <svg width="64" height="64" class="trash" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <svg class="icons__heart hidden" width="64" height="64" class="trash" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
               </svg>
 
-              <svg width="64" height="64" class="trash" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <svg class="icons__cart" width="64" height="64" class="trash" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path d="M9 20a1 1 0 1 0 0 2 1 1 0 1 0 0-2z"></path>
                 <path d="M20 20a1 1 0 1 0 0 2 1 1 0 1 0 0-2z"></path>
                 <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
@@ -53,7 +53,12 @@
         </div>
       </div>
       <nav class="header__nav">
-        <ul class="header__nav__content">
+        <svg class="menu" width="64" height="64" class="trash" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M3 12h18"></path>
+          <path d="M3 6h18"></path>
+          <path d="M3 18h18"></path>
+        </svg>
+        <ul class="header__nav__content hidden">
           <li class="header__nav__item"><a href="">Lançamentos</a></li>
           <li class="header__nav__item"><a href="">Pc Gamer</a></li>
           <li class="header__nav__item"><a href="">Ofertas Especiais</a></li>

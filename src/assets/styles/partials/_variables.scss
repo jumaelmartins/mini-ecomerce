@@ -1,0 +1,33 @@
+$primary: #ffcf00;
+$secundary: darkgray;
+$neutral: snow;
+$text-1: lightgray;
+$text-2: white;
+
+@mixin flex($direction, $wrap, $align, $justify) {
+  display: flex;
+  flex-flow: $direction $wrap;
+  align-items: $align;
+  justify-content: $justify;
+}
+
+@mixin position($position, $top, $right, $bottom, $left) {
+  position: $position;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+}
+
+@mixin size($width, $height, $max-width, $max-height, $marginY, $marginX) {
+  width: $width;
+  height: $height;
+  max-width: $max-width;
+  max-height: $max-height;
+  margin: $marginY $marginX;
+}
+
+@mixin color($bg, $text) {
+  background-color: $bg;
+  color: $text;
+}

@@ -21,7 +21,9 @@
 [X] - Função para adicionar items no carrinho
 [X] - Função para remover items no carrinho
 [X] - Criar estrutura base Html.
-[] - Reset CSS.
+[X] - Reset CSS.
+[X] - Estilização Header (Mobile)
+[] - Estilização Seção Principal (Mobile)
 [] - Criar Estilização Inicial CSS.
 [] - Contador
 [] - Criar Classe Produtos
