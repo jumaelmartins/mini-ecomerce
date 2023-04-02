@@ -23,6 +23,7 @@
 [X] - Criar estrutura base Html.
 [X] - Reset CSS.
 [X] - Estilização Header (Mobile)
+[] - Estilização Card (Mobile)
 [] - Estilização Seção Principal (Mobile)
 [] - Criar Estilização Inicial CSS.
 [] - Contador

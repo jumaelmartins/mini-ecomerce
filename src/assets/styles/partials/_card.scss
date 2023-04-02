@@ -1,0 +1,31 @@
+@use "./variables";
+
+.main {
+  @include variables.size(90%, auto, 90%, auto, auto, auto);
+}
+
+.products__card {
+  @include variables.flex(column, nowrap, "", "");
+  max-width: 28rem;
+  background: white;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.products__card__first-column__header {
+  @include variables.flex(row, nowrap, center, space-between);
+  @include variables.size(auto, 3.5rem, auto, 3.5rem, auto, auto);
+  svg {
+    max-height: 100%;
+  }
+}
+
+.products__card__first-column__container__content {
+  @include variables.flex(row, nowrap, center, space-between);
+}
+
+.products__card__first-column__content {
+  @include variables.flex(column, nowrap, space-between, space-between);
+  @include variables.size(auto, 100%, auto, 100%, auto, auto);
+  min-height: 12rem;
+}
