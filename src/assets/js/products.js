@@ -3,18 +3,8 @@ import { getLocalStorageItem } from "./localStorage";
 
 export let products = productsJson;
 let filteredItems = [];
-let cart = [];
 let liked = [];
 
-const addItemToCart = (newItem) => {
-  cart.push(newItem);
-};
-
-const removeItemToCart = (item) => {
-  const itemToRemove = cart.filter((cartItem) => item.id === cartItem.id);
-  const indexOfItemToRemove = cart.indexOf(itemToRemove);
-  return indexOfItemToRemove !== -1 ? cart.splice(indexOfItemToRemove, 1) : "";
-};
 
 const loadItems = () => {
   const ul = document.querySelector(".products__list");
@@ -25,14 +15,13 @@ const loadItems = () => {
 
 const itemsToHtml = (products) => {
   return `
-    <li class="products__card">
+    <li id="${products.id}" class="products__card">
         <div class="products__card__first-column">
         <div class="products__card__first-column__header">
-            <p>5 stars <b>(5)</b></p>
+            <p>${products.stars} stars <b>(${products.reviews.total})</b></p>
             <svg
             width="64"
             height="64"
-            class="trash"
             fill="none"
             stroke="currentColor"
             stroke-linecap="round"
@@ -50,14 +39,14 @@ const itemsToHtml = (products) => {
             <div class="products__card__first-column__thumbnail"> 
             <img
                 width="128"
-                src="https://images.kabum.com.br/produtos/fotos/164854/placa-de-video-asus-nvidia-dual-rtx-3060-o12g-v2-15-gbps-12gb-gddr6-ray-tracing-dlss-90yv0gb2-m0na10_1623244899_gg.jpg"
+                src="${products.thumbnail}"
                 alt=""
             />
             </div>
             <div class="products__card__first-column__content">
-            <h2>Placa de Video</h2>
+            <h2>${products.title}</h2>
             <div>
-                <p>R$ 5000</p>
+                <p class="price">R$ <b>${products.price}</b></p>
                 <p>A vista no Boleto</p>
             </div>
             </div>
