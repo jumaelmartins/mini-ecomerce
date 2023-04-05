@@ -23,7 +23,14 @@
 [X] - Criar estrutura base Html.
 [X] - Reset CSS.
 [X] - Estilização Header (Mobile)
-[] - Estilização Card (Mobile)
+[X] - Estilização Card (Mobile)
+
+### Etapa 2
+
+[X] - Pagina do Carrinho.
+[] - Estilização da Pagina de Carrinho
+
+### Etapa 3
 [] - Estilização Seção Principal (Mobile)
 [] - Criar Estilização Inicial CSS.
 [] - Contador
@@ -31,10 +38,5 @@
 [] - Criar Metodo Para obter produtos.
 [] - Popular o JSON com Produtos da Loja.
 [] - Carregar JSON na Pagina.
-
-### Etapa 2
-
-
-### Etapa 3
 
 ### Extras
