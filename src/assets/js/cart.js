@@ -29,5 +29,7 @@ document.addEventListener("click", e => {
         const price = li.querySelector(".price");
         addItemToCart(parseInt(id), title.textContent, thumbnail.src, parseFloat(price.firstElementChild.textContent));
         console.log(cart);
-    }
+
+        window.location.href = '/pages/product.html'
+    } 
 })
