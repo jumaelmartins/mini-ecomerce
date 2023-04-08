@@ -29,6 +29,7 @@
 
 [X] - Pagina do Carrinho.
 [X] - Carousel Produtos (Mobule)
+[X] - Descrição do produto.
 [] - Estilização da Pagina de Carrinho
 
 ### Etapa 3
