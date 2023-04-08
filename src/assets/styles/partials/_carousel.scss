@@ -1,0 +1,61 @@
+.carousel {
+  overflow: hidden;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.carousel-container {
+  width: 400%;
+  display: flex;
+  flex-flow: row nowrap;
+
+  input {
+    display: none;
+  }
+}
+
+.carousel-item {
+  width: 25%;
+  position: relative;
+
+  img {
+    width: 256px;
+  }
+}
+
+.manual-navigation {
+  position: absolute;
+  width: 90%;
+  margin-top: -30px;
+  display: flex;
+  justify-content: center;
+  background: green;
+}
+
+.manual-btn {
+  background-color: green;
+  border: 3px solid yellow;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+
+  &:not(:last-child) {
+    margin-right: 5px;
+  }
+}
+
+#radio1:checked ~ .first {
+  margin-left: 0;
+}
+
+#radio2:checked ~ .first {
+  margin-left: -25%;
+}
+
+#radio3:checked ~ .first {
+  margin-left: -50%;
+}
+
+#radio4:checked ~ .first {
+  margin-left: -75%;
+}

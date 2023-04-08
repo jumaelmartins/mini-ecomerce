@@ -28,6 +28,7 @@
 ### Etapa 2
 
 [X] - Pagina do Carrinho.
+[X] - Carousel Produtos (Mobule)
 [] - Estilização da Pagina de Carrinho
 
 ### Etapa 3

@@ -5,12 +5,14 @@ export let products = productsJson;
 let filteredItems = [];
 let liked = [];
 
-
 const loadItems = () => {
   const ul = document.querySelector(".products__list");
-  ul.innerHTML = "";
-  const newHtml = products.map(itemsToHtml);
-  ul.innerHTML = newHtml;
+
+  if (ul) {
+    ul.innerHTML = "";
+    const newHtml = products.map(itemsToHtml);
+    ul.innerHTML = newHtml;
+  }
 };
 
 const itemsToHtml = (products) => {
