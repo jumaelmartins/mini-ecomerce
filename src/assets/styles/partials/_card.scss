@@ -10,6 +10,7 @@
   background: white;
   padding: 1rem;
   border-radius: 1rem;
+  margin: 1rem 0;
 }
 
 .products__card__first-column__header {
@@ -22,10 +23,30 @@
 
 .products__card__first-column__container__content {
   @include variables.flex(row, nowrap, center, space-between);
-} 
+}
 
 .products__card__first-column__content {
   @include variables.flex(column, nowrap, space-between, space-between);
   @include variables.size(auto, 100%, auto, 100%, auto, auto);
   min-height: 12rem;
+
+  h2 {
+    overflow: auto;
+    display: flex;
+    height: 40px;
+    text-overflow: ellipsis;
+    flex-wrap: nowrap;
+  }
+}
+
+.products__card__second-column {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  button {
+    padding: 0.8rem;
+    width: 100%;
+    background-color: rebeccapurple;
+    color: white;
+  }
 }

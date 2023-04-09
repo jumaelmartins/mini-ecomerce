@@ -71,3 +71,16 @@
 .header__nav {
   line-height: 8rem;
 }
+
+.cart__counter {
+  text-align: center;
+  width: 16px;
+  height: 16px;
+  border-radius: 100%;
+  position: absolute;
+  background-color: orange;
+  color: white;
+  right: 45px;
+  top: 20px;
+  z-index: 2;
+}

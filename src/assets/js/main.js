@@ -2,4 +2,5 @@ import '../styles/main.scss';
 import './data';
 import './products';
 import './cart';
-import './carousel'
+import './carousel';
+import './events';

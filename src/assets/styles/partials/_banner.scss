@@ -1,0 +1,24 @@
+.banner {
+  display: flex;
+  flex-direction: column;
+}
+
+.banner__image {
+  display: flex;
+  flex-direction: column;
+  order: 0;
+  img {
+    width: 100%;
+    height: 7rem;
+  }
+  p {
+    padding: 1rem;
+    background-color: orange;
+    text-align: center;
+  }
+}
+
+.banner__title {
+  order: 1;
+  margin: 1rem 5%;
+}
