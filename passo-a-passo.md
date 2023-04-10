@@ -31,7 +31,7 @@
 [X] - Carousel Produtos (Mobule)
 [X] - Descrição do produto.
 [X] - Validação para não adicionar o item ao carrinho mais de uma vez.
-[]
+[X] - Exibir contagem de Items no Carrinho
 [] - Estilização da Pagina de Carrinho
 
 ### Etapa 3

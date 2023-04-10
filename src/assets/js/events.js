@@ -1,4 +1,5 @@
 import { addItemToCart, cart } from "./cart";
+import { showCounter, updateCounter } from "./counter";
 
 document.addEventListener("click", (e) => {
   if (e.target.innerText === " Comprar") {
@@ -21,6 +22,8 @@ document.addEventListener("click", (e) => {
         parseFloat(price.firstElementChild.textContent)
       );
     }
+    showCounter();
+    updateCounter();
   }
 });
 
