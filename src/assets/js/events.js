@@ -1,6 +1,8 @@
 import { addItemToCart, cart } from "./cart";
 import { showCounter, updateCounter } from "./counter";
 import { toggleMenu } from "./menu";
+import { filterProducts, produtsDetailToHtml } from "./products";
+let id = [];
 
 document.addEventListener("click", (e) => {
   if (e.target.innerText === " Comprar") {
@@ -31,11 +33,19 @@ document.addEventListener("click", (e) => {
     console.log(true)
     toggleMenu();
   }
+
+  if (e.target.closest("li")) {
+    id = (parseInt(e.target.closest("li").id));   
+    const productsHtml = document.querySelector(".products")
+    const filteredProduct = filterProducts(id);
+    const newHtml = filteredProduct.map(produtsDetailToHtml);
+    productsHtml.innerHTML = newHtml;
+  }
+  
+  
 });
 
 const form = document.querySelector("form");
 form.addEventListener("submit", (e) => {
   e.preventDefault();
 });
-
-// window.location.href = '/pages/product.html'

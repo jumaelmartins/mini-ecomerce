@@ -15,12 +15,12 @@ const loadItems = () => {
   }
 };
 
-const itemsToHtml = (products) => {
+const itemsToHtml = (product) => {
   return `
-    <li id="${products.id}" class="products__card">
+    <li id="${product.id}" class="products__card">
         <div class="products__card__first-column">
         <div class="products__card__first-column__header">
-            <p>${products.stars} stars <b>(${products.reviews.total})</b></p>
+            <p>${product.stars} stars <b>(${product.reviews.total})</b></p>
             <svg
             width="64"
             height="64"
@@ -41,14 +41,14 @@ const itemsToHtml = (products) => {
             <div class="products__card__first-column__thumbnail"> 
             <img
                 width="128"
-                src="${products.thumbnail}"
+                src="${product.thumbnail}"
                 alt=""
             />
             </div>
             <div class="products__card__first-column__content">
-            <h2>${products.title}</h2>
+            <h2>${product.title}</h2>
             <div>
-                <p class="price">R$ <b>${products.price}</b></p>
+                <p class="price">R$ <b>${product.price}</b></p>
                 <p>A vista no Boleto</p>
             </div>
             </div>
@@ -65,3 +65,37 @@ const itemsToHtml = (products) => {
 };
 
 loadItems();
+
+export const filterProducts = (id) => {
+  const selectProduct = products.filter(product => product.id === id)
+  return selectProduct;
+}
+
+export const produtsDetailToHtml = (product) => {
+return `
+<div class="products__informations">
+      <h2>
+        DESCRIÇÃO
+      </h2>
+      <ul>
+        <li>
+          <h3>${product.description.title}</h3>
+        </li>
+        <li>
+          <h3>${product.description.topics.title}</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis expedita, adipisci atque quisquam aliquam sapiente ullam praesentium. Libero voluptatum nobis quo vel, neque exercitationem nostrum, porro, similique laudantium sint nulla!</p>
+        </li>
+        <li>
+          <h3>caracteristicas tecnicas</h3>
+          <p>Marc: ASUS</p>
+          <p>modelo: RTX3080</p>
+        </li>
+        <li>
+          <h3>Clock</h3>
+          <p>Modo OC: 1867</p>
+          <p>Modo Gaming: 1837</p>
+        </li>
+      </ul>
+    </div>
+`
+}
