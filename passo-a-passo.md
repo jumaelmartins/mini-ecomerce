@@ -32,6 +32,7 @@
 [X] - Descrição do produto.
 [X] - Validação para não adicionar o item ao carrinho mais de uma vez.
 [X] - Exibir contagem de Items no Carrinho
+[X] - Menu Hamburguer
 [] - Estilização da Pagina de Carrinho
 
 ### Etapa 3

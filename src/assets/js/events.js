@@ -1,5 +1,6 @@
 import { addItemToCart, cart } from "./cart";
 import { showCounter, updateCounter } from "./counter";
+import { toggleMenu } from "./menu";
 
 document.addEventListener("click", (e) => {
   if (e.target.innerText === " Comprar") {
@@ -25,6 +26,16 @@ document.addEventListener("click", (e) => {
     showCounter();
     updateCounter();
   }
+
+  if (e.target.classList.contains("menu")) {
+    console.log(true)
+    toggleMenu();
+  }
+});
+
+const form = document.querySelector("form");
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
 });
 
 // window.location.href = '/pages/product.html'
