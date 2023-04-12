@@ -35,8 +35,10 @@
 [X] - Menu Hamburguer
 [X] - Estilização da pagina Principal
 [X] - Fix
-[] - Ajuste na descrição de Produtos.
+[] - Ajuste no CARD de descrição de Produtos.
 [] - Estilização da Pagina de Carrinho
+[] - Card Avaliação
+
 
 ### Etapa 3
 [] - Estilização Seção Principal (Mobile)
