@@ -1,3 +1,5 @@
+@use "./variables";
+
 .banner {
   display: flex;
   flex-direction: column;
@@ -13,8 +15,11 @@
   }
   p {
     padding: 1rem;
-    background-color: orange;
+    background-color: variables.$third;
     text-align: center;
+    text-transform: capitalize;
+    color: variables.$text-1;
+    font-weight: bold;
   }
 }
 

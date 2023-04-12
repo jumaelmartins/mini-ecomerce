@@ -33,6 +33,7 @@
 [X] - Validação para não adicionar o item ao carrinho mais de uma vez.
 [X] - Exibir contagem de Items no Carrinho
 [X] - Menu Hamburguer
+[X] - Estilização da pagina Principal
 [] - Ajuste na descrição de Produtos.
 [] - Estilização da Pagina de Carrinho
 

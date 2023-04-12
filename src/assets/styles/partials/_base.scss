@@ -1,3 +1,4 @@
+@use "./variables";
 *,
 *:after,
 *:before {
@@ -41,9 +42,9 @@ html {
 }
 
 .hidden {
-    display: none;
+  display: none;
 }
 
 body {
-    background: lightgrey;
+  background: variables.$secundary;
 }

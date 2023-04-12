@@ -8,16 +8,23 @@
   @include variables.flex(column, nowrap, "", "");
   max-width: 28rem;
   background: white;
-  padding: 1rem;
+  padding: 1.5rem 1rem;
   border-radius: 1rem;
   margin: 1rem 0;
+  box-shadow: 0px 0px 15px 3px variables.$secundary;
 }
 
 .products__card__first-column__header {
   @include variables.flex(row, nowrap, center, space-between);
-  @include variables.size(auto, 3.5rem, auto, 3.5rem, auto, auto);
+  @include variables.size(auto, 3.2rem, auto, 3.2rem, auto, auto);
+  p {
+    color: variables.$text-2;
+  }
+  
   svg {
     max-height: 100%;
+    color: variables.$secundary;
+    fill: variables.$text-1;
   }
 }
 
@@ -32,11 +39,15 @@
 
   h2 {
     overflow: hidden;
-    display: flex;
     height: 40px;
-    text-overflow: ellipsis;
-    flex-wrap: nowrap;
+    color: variables.$text-2;
   }
+
+  div > .price {
+    font-weight: bold;
+    font-size: 1.8rem;
+  }
+
 }
 
 .products__card__second-column {
@@ -48,5 +59,6 @@
     width: 100%;
     background-color: rebeccapurple;
     color: white;
+    box-shadow: 0px 0px 3px 1px rebeccapurple;
   }
 }

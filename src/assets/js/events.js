@@ -34,7 +34,7 @@ document.addEventListener("click", (e) => {
     toggleMenu();
   }
 
-  if (e.target.closest("li")) {
+  if (e.target.closest("li") && e.target.innerText !== " Comprar") {
     id = (parseInt(e.target.closest("li").id));   
     const productsHtml = document.querySelector(".products")
     const filteredProduct = filterProducts(id);
