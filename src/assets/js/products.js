@@ -5,7 +5,7 @@ export let products = productsJson;
 let filteredItems = [];
 let liked = [];
 
-const loadItems = () => {
+export const loadItems = () => {
   const ul = document.querySelector(".products__list");
 
   if (ul) {
@@ -67,12 +67,62 @@ const itemsToHtml = (product) => {
 loadItems();
 
 export const filterProducts = (id) => {
-  const selectProduct = products.filter(product => product.id === id)
+  const selectProduct = products.filter((product) => product.id === id);
   return selectProduct;
-}
+};
 
 export const produtsDetailToHtml = (product) => {
-return `
+  return `
+  <div class="carousel">
+        <div class="carousel-container">
+          <input type="radio" name="radio-btn" id="radio1" />
+          <input type="radio" name="radio-btn" id="radio2" />
+          <input type="radio" name="radio-btn" id="radio3" />
+          <input type="radio" name="radio-btn" id="radio4" />
+
+          <div class="carousel-item first">
+            <img src="https://images.kabum.com.br/produtos/fotos/164854/placa-de-video-asus-nvidia-dual-rtx-3060-o12g-v2-15-gbps-12gb-gddr6-ray-tracing-dlss-90yv0gb2-m0na10_1623244899_g.jpg" alt=""/>
+          </div>
+
+          <div class="carousel-item">
+            <img src="https://images.kabum.com.br/produtos/fotos/164854/placa-de-video-asus-nvidia-dual-rtx-3060-o12g-v2-15-gbps-12gb-gddr6-ray-tracing-dlss-90yv0gb2-m0na10_1623244900_gg.jpg" alt=""/>
+          </div>
+
+          <div class="carousel-item">
+            <img src="https://images.kabum.com.br/produtos/fotos/164854/placa-de-video-asus-nvidia-dual-rtx-3060-o12g-v2-15-gbps-12gb-gddr6-ray-tracing-dlss-90yv0gb2-m0na10_1623244903_gg.jpg" alt=""/>
+          </div>
+
+          <div class="carousel-item">
+            <img src="https://images.kabum.com.br/produtos/fotos/164854/placa-de-video-asus-nvidia-dual-rtx-3060-o12g-v2-15-gbps-12gb-gddr6-ray-tracing-dlss-90yv0gb2-m0na10_1623244904_gg.jpg" alt=""/>
+          </div>
+
+          <div class="carousel-navigation">
+            <div class="btn-auto1"></div>
+            <div class="btn-auto2"></div>
+            <div class="btn-auto3"></div>
+            <div class="btn-auto4"></div>
+          </div>
+
+        </div>
+
+        <div class="manual-navigation">
+          <label for="radio1" class="manual-btn"></label>
+          <label for="radio2" class="manual-btn"></label>
+          <label for="radio3" class="manual-btn"></label>
+          <label for="radio4" class="manual-btn"></label>
+        </div>
+
+      </div>
+
+      <div class="card">
+          <div>
+            r$2549
+          </div>
+          <div>
+            Comprar
+          </div>
+      </div>
+
 <div class="products__informations">
       <h2>
         DESCRIÇÃO
@@ -97,5 +147,5 @@ return `
         </li>
       </ul>
     </div>
-`
-}
+`;
+};

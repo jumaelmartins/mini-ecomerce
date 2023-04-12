@@ -1,6 +1,7 @@
+@use "./variables";
+
 .carousel {
   overflow: hidden;
-  width: 90%;
   margin: 0 auto;
 }
 
@@ -29,18 +30,17 @@
   margin-top: -30px;
   display: flex;
   justify-content: center;
-  background: green;
 }
 
 .manual-btn {
-  background-color: green;
-  border: 3px solid yellow;
+  background-color: variables.$third;
+  border: 4px solid variables.$secundary;
   border-radius: 10px;
   cursor: pointer;
   transition: 1s;
 
   &:not(:last-child) {
-    margin-right: 5px;
+    margin-right: 15px;
   }
 }
 
@@ -58,4 +58,16 @@
 
 #radio4:checked ~ .first {
   margin-left: -75%;
+}
+
+.carousel-navigation div {
+  background-color: variables.$third;
+  border: 4px solid variables.$secundary;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+
+  &:not(:last-child) {
+    margin-right: 15px;
+  }
 }

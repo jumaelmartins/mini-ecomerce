@@ -1,7 +1,7 @@
 import { addItemToCart, cart } from "./cart";
 import { showCounter, updateCounter } from "./counter";
 import { toggleMenu } from "./menu";
-import { filterProducts, produtsDetailToHtml } from "./products";
+import { filterProducts, loadItems, produtsDetailToHtml } from "./products";
 let id = [];
 
 document.addEventListener("click", (e) => {
@@ -30,19 +30,21 @@ document.addEventListener("click", (e) => {
   }
 
   if (e.target.classList.contains("menu")) {
-    console.log(true)
+    console.log(true);
     toggleMenu();
   }
 
-  if (e.target.closest("li") && e.target.innerText !== " Comprar") {
-    id = (parseInt(e.target.closest("li").id));   
-    const productsHtml = document.querySelector(".products")
+  if (
+    e.target.closest("li") &&
+    e.target.innerText !== " Comprar" &&
+    e.target.closest("li").classList.contains("products__card")
+  ) {
+    id = parseInt(e.target.closest("li").id);
+    const productsHtml = document.querySelector(".products");
     const filteredProduct = filterProducts(id);
     const newHtml = filteredProduct.map(produtsDetailToHtml);
     productsHtml.innerHTML = newHtml;
   }
-  
-  
 });
 
 const form = document.querySelector("form");

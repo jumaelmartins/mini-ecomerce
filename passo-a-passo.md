@@ -34,6 +34,7 @@
 [X] - Exibir contagem de Items no Carrinho
 [X] - Menu Hamburguer
 [X] - Estilização da pagina Principal
+[X] - Fix
 [] - Ajuste na descrição de Produtos.
 [] - Estilização da Pagina de Carrinho
 
