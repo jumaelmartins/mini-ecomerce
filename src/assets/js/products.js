@@ -116,7 +116,7 @@ export const produtsDetailToHtml = (product) => {
 
       <div class="card">
           <div>
-            r$2549
+            ${"R$" + product.price}
           </div>
           <div>
             Comprar
@@ -132,18 +132,33 @@ export const produtsDetailToHtml = (product) => {
           <h3>${product.description.title}</h3>
         </li>
         <li>
-          <h3>${product.description.topics.title}</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis expedita, adipisci atque quisquam aliquam sapiente ullam praesentium. Libero voluptatum nobis quo vel, neque exercitationem nostrum, porro, similique laudantium sint nulla!</p>
+          <h3>${product.description.topics[0].title}</h3>
+          <p>${product.description.topics[0].content}</p>
+        </li>
+        <li>
+          <h3>${product.description.topics[1].title}</h3>
+          <p>${product.description.topics[1].content}</p>
         </li>
         <li>
           <h3>caracteristicas tecnicas</h3>
-          <p>Marc: ASUS</p>
-          <p>modelo: RTX3080</p>
+          <h3>${product.techinfo.topics[0].title}</h3>
+          <p>marca: ${product.techinfo.topics[0].brand}</p>
+          <p>modelo: ${product.techinfo.topics[0].model}</p>
         </li>
         <li>
-          <h3>Clock</h3>
-          <p>Modo OC: 1867</p>
-          <p>Modo Gaming: 1837</p>
+          <h3>${product.techinfo.topics[1].title}</h3>
+          <p>Motor Grafico: ${product.techinfo.topics[1].engine}</p>
+          <p>Cuda Core: ${product.techinfo.topics[1].cudacore}</p>
+        </li>
+        <li>
+          <h3>${product.techinfo.topics[2].title}</h3>
+          <p>modo-overclock: ${product.techinfo.topics[2].ocmode}</p>
+          <p>modo-gaming: ${product.techinfo.topics[2].gamingmode}</p>
+        </li>
+
+        <li>
+          <p>peso: ${product.techinfo.topics[3].weigth}</p>
+          <p>garantia: ${product.techinfo.topics[4].warranty} meses</p>
         </li>
       </ul>
     </div>

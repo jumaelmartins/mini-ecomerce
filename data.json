@@ -44,7 +44,7 @@
           }
         ]
       },
-      "tech-info": {
+      "techinfo": {
         "topics": [
           {
             "title": "Features",
@@ -54,12 +54,12 @@
           {
             "title": "GPU",
             "engine": "NVIDIA GeForce RTX 3060",
-            "cuda-core": 3584
+            "cudacore": 3584
           },
           {
             "title": "Clock Engine",
-            "oc-mode": "1867 MHz (Boost Clock)",
-            "gaming-mode": "1837 MHz (Boost Clock)"
+            "ocmode": "1867 MHz (Boost Clock)",
+            "gamingmode": "1837 MHz (Boost Clock)"
           },
           {
             "weigth": 880
