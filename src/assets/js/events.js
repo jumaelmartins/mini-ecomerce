@@ -39,11 +39,16 @@ document.addEventListener("click", (e) => {
     e.target.innerText !== " Comprar" &&
     e.target.closest("li").classList.contains("products__card")
   ) {
+    const title = document.createElement("h2");
+    
     id = parseInt(e.target.closest("li").id);
     const productsHtml = document.querySelector(".products");
     const filteredProduct = filterProducts(id);
     const newHtml = filteredProduct.map(produtsDetailToHtml);
-    productsHtml.innerHTML = newHtml;
+    title.innerText = filteredProduct[0].title;
+    productsHtml.innerHTML = "";
+    productsHtml.appendChild(title);
+    productsHtml.innerHTML += newHtml;
   }
 });
 

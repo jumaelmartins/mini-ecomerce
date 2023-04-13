@@ -1,5 +1,15 @@
 @use "./variables";
 
+.products {
+    h2 {
+      font-size: 1.7rem;
+      margin: 1rem auto;
+      color: variables.$text-2;
+      font-weight: bold;
+    }   
+}
+
+
 .products__informations {
   @include variables.flex(column, nowrap, "", "");
   padding: 1rem;
@@ -11,7 +21,7 @@
   h2 {
     font-size: 1.7rem;
     margin: 1rem auto;
-  }
+  }   
 
   h3 {
     font-size: 1.7rem;
