@@ -38,7 +38,7 @@
 [X] - Ajuste no CARD de descrição de Produtos.
 [X] - Modal ao Clicar em comprar.
 [X] - Estilizar modal.
-[] - Acionamento do Modal ao Clicar em Comprar.
+[X] - Acionamento do Modal ao Clicar em Comprar.
 [] - Estilização da Pagina de Carrinho
 [] - Card Avaliação
 

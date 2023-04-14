@@ -73,7 +73,7 @@ export const filterProducts = (id) => {
 
 export const produtsDetailToHtml = (product) => {
   return `
-  <div class="modal__container">
+  <div class="modal__container hidden">
     <div class="modal__content">
       <p>Item Adicionado ao Carrinho!</p>
       <button class="modal__button__cart">Ir Para o Carrinho</button>
@@ -125,7 +125,7 @@ export const produtsDetailToHtml = (product) => {
           <div>
             ${"R$" + product.price}
           </div>
-          <div>
+          <div class="buy">
             Comprar
           </div>
       </div>

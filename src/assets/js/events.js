@@ -50,6 +50,24 @@ document.addEventListener("click", (e) => {
     productsHtml.appendChild(title);
     productsHtml.innerHTML += newHtml;
   }
+
+  if (e.target.classList.contains("buy")) {
+    const modal = document.querySelector(".modal__container")
+    modal.classList.remove("hidden")
+    console.log()
+  }
+
+  if (e.target.classList.contains("modal__button__cart")) {
+    const modal = document.querySelector(".modal__container")
+    modal.classList.add("hidden")
+  }
+
+  if (e.target.classList.contains("modal__button__shopping")) {
+    const modal = document.querySelector(".modal__container")
+    modal.classList.add("hidden")
+  }
+
+
 });
 
 const form = document.querySelector("form");
