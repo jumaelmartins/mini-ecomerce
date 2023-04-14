@@ -73,6 +73,13 @@ export const filterProducts = (id) => {
 
 export const produtsDetailToHtml = (product) => {
   return `
+  <div class="modal__container">
+    <div class="modal__content">
+      <p>Item Adicionado ao Carrinho</p>
+      <button>Ir Para o Carrinho</button>
+      <button>Continuar Comprando</button>
+    </div>
+  </div>
   <div class="carousel">
         <div class="carousel-container">
           <input type="radio" name="radio-btn" id="radio1" />

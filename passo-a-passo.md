@@ -36,17 +36,13 @@
 [X] - Estilização da pagina Principal
 [X] - Fix
 [X] - Ajuste no CARD de descrição de Produtos.
+[X] - Modal ao Clicar em comprar.
+[] - Estilizar modal.
 [] - Estilização da Pagina de Carrinho
 [] - Card Avaliação
 
 
 ### Etapa 3
-[] - Estilização Seção Principal (Mobile)
-[] - Criar Estilização Inicial CSS.
-[] - Contador
-[] - Criar Classe Produtos
-[] - Criar Metodo Para obter produtos.
 [] - Popular o JSON com Produtos da Loja.
-[] - Carregar JSON na Pagina.
-
+[] - Responsividade
 ### Extras
