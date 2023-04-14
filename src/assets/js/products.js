@@ -75,9 +75,9 @@ export const produtsDetailToHtml = (product) => {
   return `
   <div class="modal__container">
     <div class="modal__content">
-      <p>Item Adicionado ao Carrinho</p>
-      <button>Ir Para o Carrinho</button>
-      <button>Continuar Comprando</button>
+      <p>Item Adicionado ao Carrinho!</p>
+      <button class="modal__button__cart">Ir Para o Carrinho</button>
+      <button class="modal__button__shopping">Continuar Comprando</button>
     </div>
   </div>
   <div class="carousel">
