@@ -30,7 +30,6 @@ document.addEventListener("click", (e) => {
   }
 
   if (e.target.classList.contains("menu")) {
-    console.log(true);
     toggleMenu();
   }
 

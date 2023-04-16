@@ -1,0 +1,36 @@
+@use "./variables";
+
+
+.header__content-cart {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.adress__container {
+    background: white;
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 5%;
+    h2 {
+        font-weight: bold;
+        font-size: 1.4rem;
+        margin: 1rem 0;
+    }
+
+    form {
+        display: flex;
+        input{
+            border: 1px solid gray;
+            height: 3rem;
+            border-radius: .5rem;
+            width: 100%;
+        }
+        button{
+            padding: .9rem;
+            border-radius: .5rem;
+            margin: 0 .5rem;
+        }
+    }
+}

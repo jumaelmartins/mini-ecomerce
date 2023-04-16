@@ -94,7 +94,7 @@
 .header__nav {
   line-height: 8rem;
   ul {
-    height: 100vh;
+    height: 100v;
   }
   ul > li:not(:last-child) {
     border-bottom: 1px solid variables.$third;
