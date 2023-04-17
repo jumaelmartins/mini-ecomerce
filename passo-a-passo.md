@@ -39,7 +39,7 @@
 [X] - Modal ao Clicar em comprar.
 [X] - Estilizar modal.
 [X] - Acionamento do Modal ao Clicar em Comprar.
-[] - Estilização da Pagina de Carrinho
+[X] - Estilização da Pagina de Carrinho
 [] - Card Avaliação
 
 
