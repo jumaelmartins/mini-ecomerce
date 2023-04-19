@@ -66,6 +66,11 @@ document.addEventListener("click", (e) => {
     modal.classList.add("hidden")
   }
 
+  if (e.target.classList.contains("icons__cart")) {
+    console.log("ok")
+  }
+
+
 
 });
 
