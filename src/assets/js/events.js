@@ -1,4 +1,4 @@
-import { addItemToCart, cart } from "./cart";
+import { addItemToCart, cart, productCartHtml } from "./cart";
 import { showCounter, updateCounter } from "./counter";
 import { toggleMenu } from "./menu";
 import { filterProducts, loadItems, produtsDetailToHtml } from "./products";
@@ -67,6 +67,9 @@ document.addEventListener("click", (e) => {
   }
 
   if (e.target.classList.contains("icons__cart")) {
+    const body = document.querySelector("body")
+    body.innerHTML = ""
+    body.innerHTML = productCartHtml();
     console.log("ok")
   }
 

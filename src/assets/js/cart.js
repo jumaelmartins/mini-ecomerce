@@ -18,7 +18,7 @@ export const removeItemToCart = (item) => {
 };
 
 
-export const productCartHtml = (product) => {
+export const productCartHtml = () => {
   return`
   <header class="header">
         <div class="header__content-cart">
@@ -45,37 +45,43 @@ export const productCartHtml = (product) => {
         <div>
             <button class="remove__btn">remover todos</button>
             <ul>
-                <li class="cart__card">
-                    <div class="cart__card__content">
-                        <div>
-                        <img width="128" src="https://images.kabum.com.br/produtos/fotos/164854/placa-de-video-asus-nvidia-dual-rtx-3060-o12g-v2-15-gbps-12gb-gddr6-ray-tracing-dlss-90yv0gb2-m0na10_1623244899_gg.jpg" alt="">
-                        </div>
-                        <div>
-                            <h3>AMD</h3>
-                            <p>Processador Ryzen</p>
-                        </div>
-                    </div>
-                    <div>
-                        <p>Com desconto x bla bla bla</p>
-                    </div>
-                    <div class="cart__card__price__container">
-                        <div class="cart__card__price__content">
-                            <p>Preço a Vista</p>
-                            <p>1000 Reais</p>
-                        </div>
-                        <div class="cart__card__counter__container">
-                            <p>Quant</p>
-                            <div class="cart__card__counter__content">
-                                <button> < </button>
-                                <p>1</p>
-                                <button> > </button>
-                            </div>
-                        </div>
-                    </div>
-                </li>
+            ${cart.map(cartCardHtml).join("")}
             </ul>
         </div>
     </section>  
-
   `
+}
+
+export const cartCardHtml = (product) => {
+    return `
+    
+    <li class="cart__card">
+    <div class="cart__card__content">
+        <div>
+        <img width="128" src="https://images.kabum.com.br/produtos/fotos/164854/placa-de-video-asus-nvidia-dual-rtx-3060-o12g-v2-15-gbps-12gb-gddr6-ray-tracing-dlss-90yv0gb2-m0na10_1623244899_gg.jpg" alt="">
+        </div>
+        <div>
+            <h3>AMD</h3>
+            <p>Processador Ryzen</p>
+        </div>
+    </div>
+    <div>
+        <p>Com desconto x bla bla bla</p>
+    </div>
+    <div class="cart__card__price__container">
+        <div class="cart__card__price__content">
+            <p>Preço a Vista</p>
+            <p>1000 Reais</p>
+        </div>
+        <div class="cart__card__counter__container">
+            <p>Quant</p>
+            <div class="cart__card__counter__content">
+                <button> < </button>
+                <p>1</p>
+                <button> > </button>
+            </div>
+        </div>
+    </div>
+</li>
+`
 }
