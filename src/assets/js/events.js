@@ -57,8 +57,11 @@ document.addEventListener("click", (e) => {
   }
 
   if (e.target.classList.contains("modal__button__cart")) {
-    const modal = document.querySelector(".modal__container")
-    modal.classList.add("hidden")
+    // const modal = document.querySelector(".modal__container")
+    const body = document.querySelector("body")
+    body.innerHTML = ""
+    body.innerHTML = productCartHtml();
+    // modal.classList.add("hidden")
   }
 
   if (e.target.classList.contains("modal__button__shopping")) {
