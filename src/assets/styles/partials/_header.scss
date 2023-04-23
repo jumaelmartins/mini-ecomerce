@@ -75,6 +75,7 @@
   @include variables.position(absolute, 2.6rem, 1.6rem, "", "");
   @include variables.size(2.4rem, 2.4rem, "", "", "", "");
   color: variables.$third;
+  cursor: pointer;
 }
 
 .icons__heart {
