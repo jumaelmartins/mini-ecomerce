@@ -4,6 +4,11 @@
   @include variables.size(90%, auto, 90%, auto, auto, auto);
 }
 
+.products__list {
+  
+  @include variables.flex(column, nowrap, center, center);
+}
+
 .products__card {
   @include variables.flex(column, nowrap, "", "");
   max-width: 28rem;

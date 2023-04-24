@@ -1,0 +1,36 @@
+
+
+@media screen and (min-width: 768px) {
+    .header .header__content {
+        flex-flow: row nowrap;
+        align-items: center;
+    }
+
+    .icons__chat, .icons__heart {
+        position: relative;
+        right: auto;
+        left: auto;
+        bottom: auto;
+        top: auto;
+    }
+
+    .header__content__second-column {
+        display: flex;
+        align-items: center;
+        max-width: 100%;
+    }
+
+    .header__content__first-column {
+        min-width: 60%;
+    }
+
+    .header__nav__content {
+        display: flex;
+        margin: 0;
+        align-items: center;
+
+        .header__nav__item {
+            margin: 0 .5rem;
+        }
+    }
+}
