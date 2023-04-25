@@ -1,36 +1,96 @@
-
+@use "./variables";
 
 @media screen and (min-width: 768px) {
-    .header .header__content {
-        flex-flow: row nowrap;
-        align-items: center;
+  .header .header__content {
+    flex-flow: row nowrap;
+    align-items: center;
+  }
+
+  .icons__chat,
+  .icons__heart,
+  .icons__cart {
+    position: relative;
+    right: auto;
+    left: auto;
+    bottom: auto;
+    top: auto;
+  }
+
+  .auth {
+    gap: 1rem;
+  }
+  .icons figure {
+    gap: 1rem;
+  }
+
+  .auth a {
+    margin: auto;
+  }
+  
+  .header__content__second-column {
+    gap: 1rem;
+  }
+  
+  .header__nav ul > li {
+    background: variables.$primary;
+    padding: 1rem 2rem;
+    width: 100%;
+    text-align: center;
+    color: variables.$text-1;
+    font-size: 1.2rem;
+    white-space: nowrap;
+  }
+
+  .header__nav ul > li:not(:last-child) {
+    border: none;
+  }
+
+  .header .header__content .header__content__first-column .search-form {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .header .header__content .header__content__first-column .search-form .search-form__input {
+    margin: auto 2rem;
+  }
+
+  .header__content__second-column {
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+  }
+
+  .header__content__first-column {
+    width: 100%;
+  }
+
+  .auth__item {
+    white-space: nowrap;
+  }
+
+  .header__nav {
+    line-height: normal;
+  }
+
+  .header__nav__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .header__nav__item {
+      margin: 0 .2rem;
+    }
+  }
+
+  .icons > figure {
+    display: flex;
+  }
+
+  .banner__image {
+    img {
+        min-height: 25rem;
+        width: 100%;
     }
 
-    .icons__chat, .icons__heart {
-        position: relative;
-        right: auto;
-        left: auto;
-        bottom: auto;
-        top: auto;
-    }
-
-    .header__content__second-column {
-        display: flex;
-        align-items: center;
-        max-width: 100%;
-    }
-
-    .header__content__first-column {
-        min-width: 60%;
-    }
-
-    .header__nav__content {
-        display: flex;
-        margin: 0;
-        align-items: center;
-
-        .header__nav__item {
-            margin: 0 .5rem;
-        }
-    }
+  }
 }
