@@ -1,17 +1,20 @@
 @use "./variables";
 
 .banner {
-  display: flex;
-  flex-direction: column;
+  width: 100vw;
+  overflow: hidden;
 }
 
 .banner__image {
+  width: 100vw;
   display: flex;
-  flex-direction: column;
-  order: 0;
+  transition: transform 0.5s ease-in-out;
+  transform: translate(0);
+  
   img {
-    width: 100%;
+    min-width: 100vw;
     height: 7rem;
+    object-fit: cover;
   }
   p {
     padding: 1rem;
@@ -24,6 +27,6 @@
 }
 
 .banner__title {
-  order: 1;
+  position: absolute;
   margin: 1rem 5%;
 }
