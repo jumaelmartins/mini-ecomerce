@@ -93,4 +93,15 @@
     }
 
   }
+
+  .products__list {
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    gap: 1rem;
+  }
+
+  .cart__counter {
+    right: 4.5%;
+    top: 1.2%;
+  }
 }
