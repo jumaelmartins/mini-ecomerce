@@ -101,7 +101,13 @@
   }
 
   .cart__counter {
-    right: 4.5%;
-    top: 1.2%;
+    position: absolute;
+    right: -15%;
+    top: 0;
+  }
+
+  .cart__container {
+    display: flex;
+    position: relative;
   }
 }
