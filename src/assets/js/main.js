@@ -6,3 +6,4 @@ import './carousel';
 import './events';
 import './menu';
 import './media-query';
+import './pagination';

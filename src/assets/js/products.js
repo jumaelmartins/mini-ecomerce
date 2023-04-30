@@ -5,17 +5,26 @@ export let products = productsJson;
 let filteredItems = [];
 let liked = [];
 
-export const loadItems = () => {
+// const limitPerPage = 8;
+// const totalPages =  Math.ceil(products.length / limitPerPage);
+// const startPage = 1;
+
+
+export const loadItems = (page) => {
   const ul = document.querySelector(".products__list");
+  const start = (page - 1) * limitPerPage;
+  const end = start + limitPerPage;
+
+  const productsPage = products.slice(start, end)
 
   if (ul) {
     ul.innerHTML = "";
-    const newHtml = products.map(itemsToHtml);
+    const newHtml = productsPage.map(itemsToHtml);
     ul.innerHTML = newHtml;
   }
 };
 
-const itemsToHtml = (product) => {
+export const itemsToHtml = (product) => {
   return `
     <li id="${product.id}" class="products__card">
         <div class="products__card__first-column">
@@ -64,7 +73,7 @@ const itemsToHtml = (product) => {
     `;
 };
 
-loadItems();
+// loadItems(startPage);
 
 export const filterProducts = (id) => {
   const selectProduct = products.filter((product) => product.id === id);
