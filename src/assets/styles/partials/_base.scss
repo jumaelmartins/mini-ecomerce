@@ -48,3 +48,29 @@ html {
 body {
   background: variables.$secundary;
 }
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  align-items: center;
+  .pages{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+
+  }
+}
+
+.pagination > .pages > button {
+  background: cyan;
+  padding: .5rem;
+  border-radius: 2.2rem;
+  cursor: pointer;
+
+  &.active {
+    background: orange;
+  }
+}
+
