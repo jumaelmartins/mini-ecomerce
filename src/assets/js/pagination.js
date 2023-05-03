@@ -1,9 +1,10 @@
+import { filterItems } from "./filter";
 import { products, itemsToHtml } from "./products";
 const nextButton = document.querySelector(".next-button");
 
 let perPage = 3;
 
-const state = {
+export const state = {
   page: 1,
   perPage,
   totalPage: Math.ceil(products.length / perPage),
@@ -117,7 +118,7 @@ function update() {
   buttons.update();
 }
 
-const list = {
+export const list = {
     update() {
         const ul = document.querySelector(".products__list");
         let page = state.page - 1;

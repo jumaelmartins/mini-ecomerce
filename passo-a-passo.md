@@ -44,6 +44,7 @@
 
 
 ### Etapa 3
-[] - Popular o JSON com Produtos da Loja.
+[X] - Popular o JSON com Produtos da Loja.
+[] - Filtragem dos Produtos.
 [] - Responsividade
 ### Extras
