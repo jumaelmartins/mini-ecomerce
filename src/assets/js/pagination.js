@@ -2,7 +2,7 @@ import { filterItems } from "./filter";
 import { products, itemsToHtml } from "./products";
 const nextButton = document.querySelector(".next-button");
 
-let perPage = 3;
+let perPage = 8;
 
 export const state = {
   page: 1,
@@ -96,6 +96,18 @@ const buttons = {
     const { maxVisibleButtons } = state;
     let maxLeft = state.page - Math.floor(maxVisibleButtons / 2);
     let maxRight = state.page + Math.floor(maxVisibleButtons / 2);
+    const firstPage = document.querySelector(".first-page");
+    const prevButton = document.querySelector(".prev-button");
+    const lastPage = document.querySelector(".last-page");
+    const nextButton = document.querySelector(".next-button")
+
+    if (maxLeft) {
+      firstPage.classList.add("hidden");
+      prevButton.classList.add("hidden");
+    } else {
+      firstPage.classList.remove("hidden");
+      prevButton.classList.remove("hidden");
+    }
 
     if (maxLeft < 1) {
       maxLeft = 1;
@@ -119,23 +131,21 @@ function update() {
 }
 
 export const list = {
-    update() {
-        const ul = document.querySelector(".products__list");
-        let page = state.page - 1;
-        let start = page * state.perPage;
-        let end = start + state.perPage;
+  update() {
+    const ul = document.querySelector(".products__list");
+    let page = state.page - 1;
+    let start = page * state.perPage;
+    let end = start + state.perPage;
 
-        const productsPage = products.slice(start, end)
+    const productsPage = products.slice(start, end);
 
-        if (ul) {
-          ul.innerHTML = "";
-          const newHtml = productsPage.map(itemsToHtml);
-          ul.innerHTML = newHtml;
-          console.log("ok")
-        }
-    }  
+    if (ul) {
+      ul.innerHTML = "";
+      const newHtml = productsPage.map(itemsToHtml);
+      ul.innerHTML = newHtml;
+    }
+  },
 };
-
 
 update();
 controls.createListeners();
