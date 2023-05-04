@@ -1,6 +1,5 @@
 import { filterItems } from "./filter";
 import { products, itemsToHtml } from "./products";
-const nextButton = document.querySelector(".next-button");
 
 let perPage = 8;
 
@@ -79,14 +78,13 @@ const buttons = {
     button.classList.add("button");
 
     button.addEventListener("click", (e) => {
-      const page = Number(e.target.innerText);
-      controls.goTo(page);
+      controls.goTo(Number(e.target.innerText));
       update();
     });
   },
   update() {
     hmtl.get(".pages").innerHTML = "";
-    const { maxLeft, maxRight } = buttons.calculateMaxVisible();
+        const { maxLeft, maxRight } = buttons.calculateMaxVisible();
 
     for (let page = maxLeft; page <= maxRight; page++) {
       buttons.create(page);
@@ -99,7 +97,7 @@ const buttons = {
     const firstPage = document.querySelector(".first-page");
     const prevButton = document.querySelector(".prev-button");
     const lastPage = document.querySelector(".last-page");
-    const nextButton = document.querySelector(".next-button")
+    const nextButton = document.querySelector(".next-button");
 
     if (maxLeft) {
       firstPage.classList.add("hidden");
@@ -141,8 +139,9 @@ export const list = {
 
     if (ul) {
       ul.innerHTML = "";
-      const newHtml = productsPage.map(itemsToHtml);
+      const newHtml = productsPage.map(itemsToHtml).join("");
       ul.innerHTML = newHtml;
+      filterItems();
     }
   },
 };
