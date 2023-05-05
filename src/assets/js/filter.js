@@ -1,3 +1,4 @@
+import { update } from "./pagination";
 import { itemsToHtml, products } from "./products";
 
 const input = document.querySelector(".search-form__input");
@@ -14,4 +15,5 @@ export const filterItems = () => {
         const newHtml = filtered.map(itemsToHtml).join("");
         ul.innerHTML = newHtml;
       }
+    return filtered;
 };

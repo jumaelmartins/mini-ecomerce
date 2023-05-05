@@ -123,7 +123,7 @@ const buttons = {
   },
 };
 
-function update() {
+export function update() {
   list.update();
   buttons.update();
 }
@@ -135,13 +135,14 @@ export const list = {
     let start = page * state.perPage;
     let end = start + state.perPage;
 
-    const productsPage = products.slice(start, end);
+    
+
+    let productsPage = products.slice(start, end);
 
     if (ul) {
       ul.innerHTML = "";
       const newHtml = productsPage.map(itemsToHtml).join("");
       ul.innerHTML = newHtml;
-      filterItems();
     }
   },
 };
